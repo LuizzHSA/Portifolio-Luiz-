@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luiz DEV | Full Stack Developer</title>
+    <title>Luiz Henrique Lopes de Sá | Desenvolvedor Full Stack</title>
     <meta name="description"
-          content="Professional portfolio of John Doe, a Full Stack Developer specializing in modern web technologies and user-centered design.">
-    <meta property="og:title" content="John Doe | Full Stack Developer">
+          content="Portfólio de Luiz Henrique Lopes de Sá, estudante de Análise e Desenvolvimento de Sistemas com foco em desenvolvimento Full Stack. Conheça meus projetos, habilidades e experiência.">
+    <meta property="og:title" content="Luiz Henrique Lopes de Sá | Desenvolvedor Full Stack">
     <meta property="og:description"
-          content="Professional portfolio of John Doe, a Full Stack Developer specializing in modern web technologies and user-centered design.">
+          content="Portfólio de um estudante de Análise e Desenvolvimento de Sistemas apaixonado por tecnologia e em busca da primeira oportunidade profissional.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://johndoe.dev">
+    <meta property="og:url" content="[URL_DO_SEU_SITE_APOS_PUBLICAR]">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -20,13 +20,11 @@
 </head>
 
 <body>
-<!-- Header -->
 <header class="header">
     <div class="container">
         <nav class="nav">
-            <a href="#" class="logo">Luiz<span>.dev</span></a>
+            <a href="#" class="logo">Luiz<span>.Sá</span></a>
 
-            <!-- Desktop Navigation -->
             <div class="nav-links">
                 <button onclick="scrollToSection('home')" class="nav-link">Home</button>
                 <button onclick="scrollToSection('about')" class="nav-link">Sobre</button>
@@ -35,56 +33,50 @@
                 <button onclick="scrollToSection('contact')" class="nav-link">Contato</button>
             </div>
 
-            <!-- Mobile Menu Button -->
             <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
 
-        <!-- Mobile Navigation -->
         <div class="mobile-menu" id="mobileMenu">
             <div class="mobile-menu-links">
-                <button onclick="scrollToSection('home')" class="mobile-nav-link">Home</button>
-                <button onclick="scrollToSection('about')" class="mobile-nav-link">Sobre</button>
-                <button onclick="scrollToSection('skills')" class="mobile-nav-link">Habilidades</button>
-                <button onclick="scrollToSection('projects')" class="mobile-nav-link">Projetos</button>
-                <button onclick="scrollToSection('contact')" class="mobile-nav-link">Contato</button>
+                <button onclick="scrollToSection('home'); toggleMobileMenu();" class="mobile-nav-link">Home</button>
+                <button onclick="scrollToSection('about'); toggleMobileMenu();" class="mobile-nav-link">Sobre</button>
+                <button onclick="scrollToSection('skills'); toggleMobileMenu();" class="mobile-nav-link">Habilidades</button>
+                <button onclick="scrollToSection('projects'); toggleMobileMenu();" class="mobile-nav-link">Projetos</button>
+                <button onclick="scrollToSection('contact'); toggleMobileMenu();" class="mobile-nav-link">Contato</button>
             </div>
         </div>
 </header>
 
 <main>
-    <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text animate-left">
-                    <h1>Olá, eu sou <span class="text-primary">Teste Dev</span></h1>
-                    <h2>Full Stack Developer</h2>
+                    <h1>Olá, eu sou <span class="text-primary">Luiz Henrique</span></h1>
+                    <h2>Estudante de Análise e Desenvolvimento de Sistemas</h2>
                     <p>
-                        Eu crio experiências digitais excepcionais que são rápidas, acessíveis e projetadas com a
-                        experiência do usuário em primeiro lugar.
+                        Estudando ativamente lógica de programação e práticas modernas de desenvolvimento. Busco uma primeira oportunidade para crescer profissionalmente, aprender com especialistas e contribuir com dedicação e entrega constante.
                     </p>
                     <div class="hero-buttons">
                         <button class="primary-btn" onclick="scrollToSection('projects')">
-                            Veja meu trabalho
+                            Veja meus projetos
                         </button>
                         <button class="outline-btn" onclick="scrollToSection('contact')">
-                            Entre em contato comigo
+                            Entre em contato
                         </button>
+                        <a href="[URL_DO_SEU_CV_PDF]" target="_blank" class="contact-button"><i class="fas fa-file-alt"></i> Baixar CV</a>
                     </div>
 
                     <div class="social-links">
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/LuizzHSA" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://linkedin.com/in/luizhsa/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="mailto:teste.test@example.com">
+                        <a href="mailto:seniorlulu20@gmail.com" aria-label="E-mail">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
@@ -93,14 +85,13 @@
                 <div class="hero-image animate-right">
                     <div class="image-container">
                         <img src="https://img.freepik.com/vetores-gratis/laptop-com-icone-de-codigo-isometrico-de-programa-desenvolvimento-de-software-e-aplicacoes-de-programacao-neon-escuro_39422-971.jpg"
-                             alt="Teste Dev - Full Stack Developer" />
+                             alt="Ilustração de um laptop com código" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
             <h2 class="section-title">Sobre mim</h2>
@@ -109,24 +100,14 @@
                 <div class="about-text animate-item">
                     <h3>Minha jornada</h3>
                     <p>
-                        Sou um desenvolvedor full stack apaixonado, com 5 anos de experiência no desenvolvimento de
-                        aplicações web que resolvem problemas do mundo real. Minha jornada no desenvolvimento de
-                        software começou durante meus estudos em ciência da computação, onde me apaixonei pela
-                        criação de soluções digitais.
+                        Sou um entusiasta da tecnologia e estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> na UNINGÁ, onde venho aprofundando meus conhecimentos em Programação Orientada a Objetos, Banco de Dados e Sistemas Operacionais.
                     </p>
                     <p>
-                        Sou especialista em ecossistemas JavaScript, especialmente React e Node.js, e tenho
-                        experiência com tecnologias de back-end modernas. Meu compromisso é escrever código limpo e
-                        sustentável, além de aprender constantemente novas tecnologias.
+                        Minha jornada profissional, embora em áreas diferentes, me proporcionou habilidades valiosas em organização, atendimento ao cliente e responsabilidade, que estou ansioso para aplicar no mundo do desenvolvimento de software.
                     </p>
                     <p>
-                        Quando não estou programando, você pode me encontrar caminhando na natureza, lendo blogs de
-                        tecnologia ou fazendo experiências com fotografia.
+                        Atualmente, meu foco é solidificar minha base em lógica, estrutura de dados e tecnologias full stack para construir soluções eficientes e bem estruturadas.
                     </p>
-                    <a href="#" class="text-link">
-                        Saiba mais sobre minha experiência
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
                 </div>
 
                 <div class="about-features">
@@ -135,51 +116,48 @@
                             <i class="fas fa-code"></i>
                         </div>
                         <h4>Desenvolvimento Web</h4>
-                        <p>Construindo aplicações web responsivas e acessíveis com frameworks modernos</p>
-                    </div>
-
-                    <div class="feature-card animate-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h4>Mobile</h4>
-                        <p>Criação de aplicativos que funcionam perfeitamente em todos os tamanhos de dispositivos
-                        </p>
+                        <p>Construindo a base para criar aplicações com HTML, CSS e JavaScript.</p>
                     </div>
 
                     <div class="feature-card animate-item">
                         <div class="feature-icon">
                             <i class="fas fa-database"></i>
                         </div>
-                        <h4>Back End</h4>
-                        <p>Projetando e implementando soluções robustas do lado do servidor</p>
+                        <h4>Banco de Dados</h4>
+                        <p>Experiência com MySQL para estruturação e gerenciamento de dados.</p>
                     </div>
 
                     <div class="feature-card animate-item">
                         <div class="feature-icon">
-                            <i class="fas fa-paint-brush"></i>
+                            <i class="fas fa-brain"></i>
                         </div>
-                        <h4>UI/UX Design</h4>
-                        <p>Creating intuitive, visually appealing user experiences</p>
+                        <h4>Lógica de Programação</h4>
+                        <p>Forte fundamento em lógica e algoritmos para resolver problemas complexos.</p>
+                    </div>
+
+                    <div class="feature-card animate-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-object-group"></i>
+                        </div>
+                        <h4>Orientação a Objetos</h4>
+                        <p>Compreensão de conceitos de POO aplicados em Java e Python.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills-section">
         <div class="container">
             <h2 class="section-title">Minhas Habilidades</h2>
 
             <div class="skills-content">
-                <!-- Technical Skills -->
                 <div class="technical-skills animate-item">
-                    <h3>Habilidades técnicas</h3>
+                    <h3>Habilidades Fundamentais</h3>
 
                     <div class="skill-item">
                         <div class="skill-header">
-                            <span>JavaScript / TypeScript</span>
+                            <span>HTML5 & CSS3</span>
                             <span>90%</span>
                         </div>
                         <div class="progress-bar">
@@ -189,78 +167,78 @@
 
                     <div class="skill-item">
                         <div class="skill-header">
-                            <span>React & Redux</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Node.js & Express</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>HTML5 & CSS3</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 95%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>SQL & NoSQL Databases</span>
+                            <span>JavaScript</span>
                             <span>75%</span>
                         </div>
                         <div class="progress-bar">
                             <div class="progress" style="width: 75%;"></div>
                         </div>
                     </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Python</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Lógica & Estrutura de Dados</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>SQL (MySQL)</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Technologies -->
                 <div class="technologies animate-item">
                     <h3>Tecnologias</h3>
 
                     <div class="tech-grid">
                         <div class="tech-card">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
                         </div>
-
-                        <div class="tech-card">
-                            <i class="fab fa-node-js"></i>
-                            <span>Node.js</span>
-                        </div>
-
                         <div class="tech-card">
                             <i class="fab fa-js"></i>
                             <span>JavaScript</span>
                         </div>
-
+                        <div class="tech-card">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
                         <div class="tech-card">
                             <i class="fab fa-html5"></i>
                             <span>HTML5</span>
                         </div>
-
                         <div class="tech-card">
                             <i class="fab fa-css3-alt"></i>
                             <span>CSS3</span>
                         </div>
-
+                        <div class="tech-card">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
                         <div class="tech-card">
                             <i class="fab fa-git-alt"></i>
                             <span>Git</span>
+                        </div>
+                        <div class="tech-card">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
                         </div>
                     </div>
                 </div>
@@ -268,132 +246,47 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="projects-section">
         <div class="container">
             <h2 class="section-title">Meus Projetos</h2>
 
             <p class="section-description">
-                Aqui estão alguns dos meus projetos recentes. Cada um foi cuidadosamente elaborado para resolver
-                problemas específicos
-                e demonstrar diferentes habilidades técnicas.
+                Este é um dos projetos acadêmicos que desenvolvi para aplicar meus conhecimentos em desenvolvimento e banco de dados.
             </p>
 
             <div class="projects-grid">
                 <div class="project-card animate-item">
-                    <img src="https://images.unsplash.com/photo-1605296867724-fa87a8ef53fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
-                         alt="E-commerce Platform project screenshot" />
-                    <div class="project-content">
-                        <h3>Plataforma de E-commerce</h3>
-                        <p>Uma plataforma de compras online completa com gerenciamento de produtos, funcionalidade
-                            de carrinho e processamento de pagamentos.</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>Stripe</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                            <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card animate-item">
-                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
-                         alt="Task Management App project screenshot" />
-                    <div class="project-content">
-                        <h3>App de gerenciamento de tarefas</h3>
-                        <p>Um aplicativo de produtividade que ajuda os usuários a organizar tarefas com
-                            funcionalidade de arrastar e soltar e recursos de colaboração em equipe.</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>Redux</span>
-                            <span>Firebase</span>
-                            <span>Tailwind CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                            <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card animate-item">
                     <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
-                         alt="Social Media Dashboard project screenshot" />
+                         alt="Projeto PIESC" />
                     <div class="project-content">
-                        <h3>Painel de mídia social</h3>
-                        <p>Uma plataforma para usuários se conectarem, compartilharem conteúdo e interagirem com
-                            recursos de mensagens e notificações em tempo real.</p>
+                        <h3>Biblioteca Virtual</h3>
+                        <p>Projeto para Gerenciar uma Bilbioteca</p>
                         <div class="project-tags">
-                            <span>React</span>
-                            <span>Socket.io</span>
-                            <span>Express</span>
-                            <span>PostgreSQL</span>
+                            <span>Front-end</span>
+                            <span>PHP</span>
+                            <span>Bootstrap 5</span>
+                            <span>Acadêmico</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> View Code
+                            <a href="https://github.com/LuizzHSA/BIBLIOTECA-VIRTUAL" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Ver no GitHub
                             </a>
-                            <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="disabled-link">
+                                <i class="fas fa-external-link-alt"></i> Demo (em breve)
                             </a>
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card animate-item">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
-                         alt="Analytics Dashboard project screenshot" />
-                    <div class="project-content">
-                        <h3>Painel de análise</h3>
-                        <p>Uma ferramenta de visualização de dados que ajuda as empresas a rastrear métricas
-                            importantes com gráficos interativos e relatórios personalizáveis.</p>
-                        <div class="project-tags">
-                            <span>Vue.js</span>
-                            <span>D3.js</span>
-                            <span>Node.js</span>
-                            <span>GraphQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                            <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="view-all-projects">
-                <button class="primary-btn">
-                    Ver todos os projetos
-                    <i class="fas fa-arrow-right"></i>
-                </button>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
             <h2 class="section-title">Entre em contato</h2>
 
             <p class="section-description">
-                Tem um projeto em mente ou quer discutir uma possível colaboração? Entre em contato e entrarei em
-                contato o mais breve possível.
+                Estou em busca da minha primeira oportunidade na área de desenvolvimento. Vamos conversar sobre como posso agregar valor à sua equipe!
             </p>
 
             <div class="contact-content">
@@ -401,20 +294,20 @@
                     <form id="contactForm">
                         <div class="form-group">
                             <label for="name">Seu Nome</label>
-                            <input type="text" id="name" name="name" placeholder="Teste teste" required>
+                            <input type="text" id="name" name="name" placeholder="Nome Completo" required>
                             <span class="error-message" id="nameError"></span>
                         </div>
 
                         <div class="form-group">
                             <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="teste.test@example.com"
+                            <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com"
                                    required>
                             <span class="error-message" id="emailError"></span>
                         </div>
 
                         <div class="form-group">
                             <label for="subject">Assunto</label>
-                            <input type="text" id="subject" name="subject" placeholder="Inquérito de Projeto"
+                            <input type="text" id="subject" name="subject" placeholder="Oportunidade / Contato"
                                    required>
                             <span class="error-message" id="subjectError"></span>
                         </div>
@@ -441,17 +334,7 @@
                         </div>
                         <div class="info-content">
                             <h4>E-mail</h4>
-                            <a href="mailto:teste.test@example.com">teste.test@example.com</a>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="info-content">
-                            <h4>Telefone</h4>
-                            <a href="tel:+12345678901">+55 (43) 9 9608-5957</a>
+                            <a href="mailto:seniorlulu20@gmail.com">seniorlulu20@gmail.com</a>
                         </div>
                     </div>
 
@@ -461,23 +344,20 @@
                         </div>
                         <div class="info-content">
                             <h4>Localização</h4>
-                            <p>Maringá, PR</p>
+                            <p>Mandaguari, PR - Brasil</p>
                         </div>
                     </div>
 
                     <div class="social-connect">
                         <h4>Conecte-se comigo</h4>
                         <div class="social-icons">
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/LuizzHSA" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://linkedin.com/in/luizhsa/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="mailto:teste.test@example.com">
+                            <a href="mailto:seniorlulu20@gmail.com" aria-label="E-mail">
                                 <i class="fas fa-envelope"></i>
                             </a>
                         </div>
@@ -488,44 +368,38 @@
     </section>
 </main>
 
-<!-- Footer -->
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
             <div class="footer-logo">
                 <button onclick="scrollToSection('home')" class="footer-logo-btn">
-                    teste<span>.dev</span>
+                    Luiz<span>.Sá</span>
                 </button>
-                <p>Construindo experiências digitais excepcionais.</p>
+                <p>Buscando a primeira oportunidade para construir o futuro.</p>
             </div>
 
             <div class="footer-social">
                 <div class="social-icons">
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/LuizzHSA" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://linkedin.com/in/luizhsa/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="mailto:john.doe@example.com">
+                    <a href="mailto:seniorlulu20@gmail.com" aria-label="E-mail">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
-                <p>&copy; <span id="currentYear"></span> Teste.Dev. Todos os direitos reservados.</p>
+                <p>&copy; <span id="currentYear"></span> Luiz Henrique Lopes de Sá. Todos os direitos reservados.</p>
             </div>
         </div>
     </div>
 </footer>
 
-<!-- Scroll to Top Button -->
 <button id="scrollToTopBtn" class="scroll-top-btn">
     <i class="fas fa-arrow-up"></i>
 </button>
 
-<!-- Toast Notification -->
 <div id="toast" class="toast">
     <div class="toast-content">
         <div class="toast-icon success">
